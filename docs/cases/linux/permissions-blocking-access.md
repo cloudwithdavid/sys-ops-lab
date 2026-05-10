@@ -53,19 +53,12 @@ uid=1042(priya.nair) gid=1042(priya.nair) groups=1042(priya.nair),1005(analysts)
 
 `Exports` directory had incorrectly configured permissions for group owner, and user `priya.nair` was not set group owner `data-exports`, therefore unable to access the file. Added user `priya.nair` to the `data-exports` group and corrected `exports` directory group permissions.
 
-## Verification
-
-- confirmed user is able to access `exports` directory
-- confirmed user is not recieving "permission denied" error, and is able to run export script.
-
-## Escalation
-
-Not required.
 > Escalate if standard permission and group checks pass but access still fails. May indicate SELinux, AppArmor, or ACLs outside support scope.
 
-## Prevention
+## Verification
 
-N/A
+- Confirmed user is able to access `exports` directory
+- Confirmed user is not recieving "permission denied" error, and is able to run export script.
 
 ## Debrief
 

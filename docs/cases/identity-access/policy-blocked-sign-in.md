@@ -28,26 +28,22 @@ The block appears to occur after the authentication steps complete, not during t
 2. Review sign-in logs of the affected user
    - finding: Logs confirm successful password authentication and MFA approval. Sign-in is blocked by an access policy. The blocking policy and unsatisfied condition are visible in the log entry.
 
-## Resolution
-
-Confirmed the block is post-authentication and account state is not the cause. Sign-in logs confirm an access policy is enforcing a condition the user's session does not satisfy.
-
-Ticket escalated to the IAM/security team with confirmed findings, the blocking policy name, and the unsatisfied condition documented for their review.
-
 ## Verification
 
-- account is active, not locked, and not disabled
-- password and MFA succeeded according to sign-in logs
-- access was blocked by an access policy
-
-Final access verification is owned by the IAM/security team after policy review, approved access path, or exception handling.
+- Account is active, not locked, and not disabled
+- Password and MFA succeeded according to sign-in logs
+- Access was blocked by an access policy
 
 ## Escalation
 
-Access policy changes/exceptions require IAM/security review. Escalating with sign-in log findings.
+> Ticket escalated to the IAM/security team with confirmed findings, the blocking policy name, and the unsatisfied condition documented for their review.
 
-Blocking policy: Require compliant device for Order Tracking Portal  
+Confirmed the block is post-authentication and account state is not the cause. Sign-in logs confirm an access policy is enforcing a condition the user's session does not satisfy.
+
+Blocking policy: 'Require compliant device for Order Tracking Portal'
 Unsatisfied condition: Device not marked compliant or managed
+
+Access policy changes/exceptions require IAM/security review. Escalating with sign-in log findings.
 
 ## Prevention
 

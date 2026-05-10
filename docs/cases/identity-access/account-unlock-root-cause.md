@@ -27,19 +27,16 @@ Single user is unable to sign in to the application. Account state is not yet co
 
 Account lockout was confirmed in the identity/admin system. The account was unlocked so the user could sign in again. Likely cause was repeated failed sign-in attempts.
 
+> Escalation not required. The issue was confirmed as a routine account lockout and was handled within first-line support scope. Escalation would be needed if the lockout happens again or if the account shows a security-related restriction.
+
 ## Verification
 
 - Confirmed user could sign in successfully and access to the account was restored
 
-## Escalation
-
-Not required. The issue was confirmed as a routine account lockout and was handled within first-line support scope. Escalation would be needed if the lockout happens again or if the account shows a security-related restriction.
-
 ## Prevention
 
-- document the likely cause of the lockout in the ticket for future reference
-
-- if the lockout happens again, check for repeated incorrect password use, stale saved credentials, or another ongoing sign-in issue
+- Document the likely cause of the lockout in the ticket for future reference
+- If the lockout happens again, check for repeated incorrect password use, stale saved credentials, or another ongoing sign-in issue
 
 ## Debrief
 

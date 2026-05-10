@@ -33,13 +33,12 @@ User reports the Lantern internal dashboard is unavailable. The issue appears to
 
 > **Related Tooling**
 >
-> [`evidence-collect.sh`](../../../tools/bash/evidence-collect.sh) supports this case by collecting first-pass Linux evidence that matches checks 2–4:
+> [`evidence-collect.sh`](../../../tools/bash/evidence-collect.sh) supports this case by collecting first-pass Linux evidence that matches checks 2 and 3:
 >
 > - service status with `systemctl status`
 > - recent service logs with `journalctl -u`
-> - filesystem usage with `df -h`
 >
-> In this case, the journal logs and filesystem usage output would quickly point toward disk pressure as the likely cause. The script does not replace the full troubleshooting path. In this case, `du -h --max-depth=1 [path]` was still needed as a manual follow-up to narrow where disk usage was concentrated after `df -h` showed filesystem pressure.
+> In this case, the journal logs and filesystem usage output would quickly point toward disk pressure as the likely cause. The script does not replace the full troubleshooting path. In this case, `df -h` and `du -h --max-depth=1 [path]` was still needed as a manual follow-up to narrow where disk usage was concentrated.
 
 ## Resolution
 
@@ -53,15 +52,11 @@ User reports the Lantern internal dashboard is unavailable. The issue appears to
 
 Old rotated Lantern logs under `/var/log/lantern/` were consuming most of the available space under `/var`. Approved old rotated logs were cleared according to the support cleanup procedure, which restored usable space on the filesystem. After space was restored, `lantern-status.service` was started successfully.
 
+> The issue was isolated to old rotated Lantern logs filling `/var/log/lantern`, which was safe to clear according to the support cleanup procedure. Escalation would be needed if the space was consumed by unknown application data, database/container files, unapproved log cleanup, or if the service still failed after space was restored.
+
 ## Verification
 
 Confirmed `/var` had usable free space after cleanup. Verified `lantern-status.service` was active/running and the Lantern dashboard loaded normally for support staff.
-
-## Escalation
-
-Not required. The issue was isolated to old rotated Lantern logs filling `/var/log/lantern`, which was safe to clear according to the support cleanup procedure.
-
-Escalation would be needed if the space was consumed by unknown application data, database/container files, unapproved log cleanup, or if the service still failed after space was restored.
 
 ## Prevention
 

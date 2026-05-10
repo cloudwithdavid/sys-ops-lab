@@ -29,12 +29,6 @@ Single user reported a possible unauthorized Microsoft 365 sign-in. The user rec
 3. Confirm the user's actual location and recent travel
    - finding: User confirms she was on a flight during the alert window and did not authorize any sign-in. She recalls declining an MFA prompt at the airport beforehand but is uncertain whether a second prompt appeared.
 
-## Resolution
-
-Sign-in logs confirm a successful sign-in from an unrecognized external location during a period the user was unreachable. Mailbox access occurred. First-line containment steps were taken immediately: the user's password was reset, all active sessions were revoked, and the incident was escalated to the security/incident response team with full findings.
-
-First-line scope ends at containment. Investigation of the breach vector, scope of mailbox access, and any downstream impact is owned by the security team.
-
 ## Verification
 
 - Password reset completed and confirmed
@@ -43,6 +37,10 @@ First-line scope ends at containment. Investigation of the breach vector, scope 
 - Security team notified with sign-in log details, affected window, and containment actions already performed
 
 ## Escalation
+
+> First-line scope ends at containment. Investigation of the breach vector, scope of mailbox access, and any downstream impact is owned by the security team.
+
+Sign-in logs confirm a successful sign-in from an unrecognized external location during a period the user was unreachable. Mailbox access occurred. First-line containment steps were taken immediately: the user's password was reset, all active sessions were revoked, and the incident was escalated to the security/incident response team with full findings.
 
 Containment completed: password reset and session revocation.
 Confirmed unauthorized sign-in from an unrecognized location with mailbox access during a window the user cannot account for.

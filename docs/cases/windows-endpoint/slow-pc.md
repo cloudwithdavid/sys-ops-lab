@@ -44,17 +44,15 @@ was advised to reduce concurrent browser tab and application load.
 Unnecessary browser processes were closed, which brought memory usage down
 to a normal operating range.
 
+> The issue was user-driven resource consumption, not a system
+fault. Escalation would be appropriate if memory usage remained critically
+high with no heavy processes running, or if the issue persisted after
+reducing workload.
+
 ## Verification
 
 Confirmed memory usage dropped to a normal level after closing unnecessary
 browser processes. User confirmed system responsiveness improved.
-
-## Escalation
-
-Not required. The issue was user-driven resource consumption, not a system
-fault. Escalation would be appropriate if memory usage remained critically
-high with no heavy processes running, or if the issue persisted after
-reducing workload.
 
 ## Prevention
 

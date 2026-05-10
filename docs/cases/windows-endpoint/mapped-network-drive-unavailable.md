@@ -35,15 +35,13 @@ Single user cannot access mapped network drive P:\. Drive is showing as disconne
 
 Stale saved credentials for the file server were preventing Windows from authenticating silently in the background. The stale entry was cleared from Credential Manager and user reconnected `P:\` using his current domain credentials. Drive is accessible and the mapping is healthy.
 
+> Escalation would be appropriate if credentials appeared valid but access still failed, if the domain trust check showed the machine was off the domain, or if multiple users began reporting the same issue pointing toward a server-side problem.
+
 ## Verification
 
 - Confirmed `P:\` shows status `OK` in `net use` output
 - Confirmed user can browse and open files in the drive normally
 - Confirmed report was completed on time
-
-## Escalation
-
-Not required. Escalation would be appropriate if credentials appeared valid but access still failed, if the domain trust check showed the machine was off the domain, or if multiple users began reporting the same issue pointing toward a server-side problem.
 
 ## Prevention
 

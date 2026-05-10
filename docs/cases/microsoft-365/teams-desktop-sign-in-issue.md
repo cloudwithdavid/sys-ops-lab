@@ -40,11 +40,7 @@ Team desktop application was not allowing user to sign in due to corrupted token
 
 ## Verification
 
-Confirmed endpoint can successfully load and sign-in to Teams desktop application
-
-## Escalation
-
-Not Required.
+Confirmed endpoint can successfully load and sign-in to Teams desktop application.
 
 ## Prevention
 

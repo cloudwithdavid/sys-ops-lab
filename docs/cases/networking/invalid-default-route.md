@@ -47,9 +47,9 @@ The build server could reach internal resources but could not reach external pac
 
 ## Verification
 
-- confirmed external IP reachability restored
-- confirmed external repository access restored
-- confirmed the Harbor Notes dependency download step completes successfully
+- Confirmed external IP reachability restored
+- Confirmed external repository access restored
+- Confirmed the Harbor Notes dependency download step completes successfully
 
 ## Prevention
 

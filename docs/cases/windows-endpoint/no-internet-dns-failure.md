@@ -42,21 +42,19 @@ Single user on a Windows endpoint is unable to access any internet-dependent sit
 
 DNS resolution was failing on the endpoint despite valid IP configuration and working connectivity to the gateway and a public IP. Disconnected and reconnected the Wi-Fi adapter to refresh local network state, then confirmed DNS queries and internet access were working normally.
 
+> Issue was resolved at the endpoint level after identifying DNS failure. Escalation would be appropriate if DNS continued failing after endpoint-level correction or if multiple devices were affected.
+
 ## Verification
 
-- confirmed DNS queries return valid responses
-- confirmed websites load normally
-- confirmed internet-dependent applications function correctly
-
-## Escalation
-
-Not required. Issue was resolved at the endpoint level after identifying DNS failure. Escalation would be appropriate if DNS continued failing after endpoint-level correction or if multiple devices were affected.
+- Confirmed DNS queries return valid responses
+- Confirmed websites load normally
+- Confirmed internet-dependent applications function correctly
 
 ## Prevention
 
-- verify DNS settings when IP/gateway appear normal but connectivity fails
-- use public IP vs DNS testing to quickly isolate name resolution issues
-- document recurring DNS issues for potential network-level follow-up
+- Verify DNS settings when IP/gateway appear normal but connectivity fails
+- Use public IP vs DNS testing to quickly isolate name resolution issues
+- Document recurring DNS issues for potential network-level follow-up
 
 ## Debrief
 

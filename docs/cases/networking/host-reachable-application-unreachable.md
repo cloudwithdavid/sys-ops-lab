@@ -54,20 +54,13 @@ Single user is unable to access vendor portal while having access to internet an
 
 The port configuration file for the vendor portal was binded to port 8080 instead of port 80. Corrected the config file binding to port 80. After the correcting the config file the vendor portal was started successfully.
 
+> Escalation would be required if editing the application config file was outside of support scope.
+
 ## Verification
 
-- confirmed the vendor portal port is now listening on port 80
-- confirmed the vendor portal returns a valid http response
-- confirmed the application vendor portal loads normally
-
-## Escalation
-
-Not required.
-Escalation would be required if editing the application config file was outside of support scope.
-
-## Prevention
-
-N/A
+- Confirmed the vendor portal port is now listening on port 80
+- Confirmed the vendor portal returns a valid http response
+- Confirmed the application vendor portal loads normally
 
 ## Debrief
 

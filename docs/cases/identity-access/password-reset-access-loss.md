@@ -31,15 +31,11 @@ User identity was verified. Password was reset and active sessions were revoked 
 
 ## Verification
 
-- Confirmed user regained access to the account and could sign in successfully with the new password.
-
-## Escalation
-
-Not required. Password reset and access restoration were completed within first-line support scope.
+Confirmed user regained access to the account and could sign in successfully with the new password.
 
 ## Prevention
 
-- document repeat sign-in or forced sign-out patterns for follow-up if the issue happens again
+Document repeat sign-in or forced sign-out patterns for follow-up if the issue happens again
 
 ## Debrief
 

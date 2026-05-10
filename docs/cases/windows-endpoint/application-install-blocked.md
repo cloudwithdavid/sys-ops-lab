@@ -35,15 +35,13 @@ User reports that the Canva desktop app installation is blocked on their company
 5. Review internal software install support guidance
    - finding: First-line support cannot approve or install applications that are not available through the approved software portal and require administrator elevation.
 
-## Resolution
-
-The install was not completed by first-line support. The issue was confirmed as an application install request requiring administrator elevation, and the application was not available through the approved company software portal. The ticket was prepared for escalation to the Endpoint/Admin team for software approval or authorized installation.
-
 ## Verification
 
 Verified that the user is attempting to install Canva Desktop on their assigned company Windows laptop, that the installer prompts for administrator credentials, and that Canva Desktop is not available through the approved company software portal.
 
 ## Escalation
+
+> The install was not completed by first-line support. The issue was confirmed as an application install request requiring administrator elevation, and the application was not available through the approved company software portal. The ticket was prepared for escalation to the Endpoint/Admin team for software approval or authorized installation.
 
 Escalated to the Endpoint/Admin team because the application requires administrator elevation, is not available through the approved software portal, and first-line support is not authorized to approve or perform non-portal software installs.
 

@@ -30,17 +30,15 @@ Single user cannot access Outlook. It is not yet clear whether the issue is a lo
 
 User already had a Microsoft 365 license assigned, but the service needed for Outlook access was not enabled. The required service was enabled in the admin portal and the user was then able to access Outlook again.
 
+> Escalation would be appropriate if license changes are outside first-line scope, no valid license is available to assign, licensing appears correct but access is still failing, or similar Outlook access issues are affecting multiple users.
+
 ## Verification
 
-- Confirmed user could access Outlook successfully after the license change was applied.
-
-## Escalation
-
-Escalation would be appropriate if license changes are outside first-line scope, no valid license is available to assign, licensing appears correct but access is still failing, or similar Outlook access issues are affecting multiple users.
+Confirmed user could access Outlook successfully after the license change was applied.
 
 ## Prevention
 
-- If similar access issues happen again, check whether the user’s M365 license and required services are assigned before treating it as a local Outlook issue.
+If similar access issues happen again, check whether the user’s M365 license and required services are assigned before treating it as a local Outlook issue.
 
 ## Debrief
 
