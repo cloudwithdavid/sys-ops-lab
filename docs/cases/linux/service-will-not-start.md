@@ -38,7 +38,12 @@ User reports the Lantern internal dashboard is unavailable. The issue appears to
 > - service status with `systemctl status`
 > - recent service logs with `journalctl -u`
 >
-> In this case, the journal logs and filesystem usage output would quickly point toward disk pressure as the likely cause. The script does not replace the full troubleshooting path. In this case, `df -h` and `du -h --max-depth=1 [path]` was still needed as a manual follow-up to narrow where disk usage was concentrated.
+> [`disk-triage.sh`](../../../tools/bash/disk-triage.sh) supports this case by collecting filesystem disk usage that maches checks 4 and 5:
+>
+> - filesystem usage with `df -h`
+> - target path size and largest entries with `du`
+>
+> In this case, the journal logs and filesystem usage output would quickly point toward disk pressure as the likely cause.
 
 ## Resolution
 
