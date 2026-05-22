@@ -21,17 +21,14 @@ Multiple users unable to access Freightboard application. User reports applicati
 1. Confirm scope
     - finding: Issue is not limited to Marcus. Multiple users across the ops team are affected.
 
-2. Service status
-    - finding: The service is active and running. No failed state, no crash indicated.
+2. Check service status and logs
+    - finding: Logs show the application failed to connect to its database on startup, while the service is active and running. No failed state or crash indicated.
 
 3. Check application reachability
     - finding: Connection times out. No HTTP response returned.
 
 4. Check listening ports
     - finding: Nothing is listening on port 80. The expected port is not open.
-
-5. Check service logs
-    - finding: Logs show the application failed to connect to its database on startup
 
 > It started the process, hit the database connection error, and never completed initialization, so it never bound to port 80.
 
