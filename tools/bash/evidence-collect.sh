@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # evidence-collect.sh
-# Server-side first-pass Linux networking and service evidence collection utility.
+# First-pass Linux networking and service evidence collection utility.
 #
-# Collects server evidence: service status, recent logs, target name resolution, routing, IP reachability, listening ports, and HTTP/HTTPS URL reachability into a timestamped file.
+# Primarily server-side — collects service status, logs, and listening ports alongside routing and reachability checks. Can also be run client-side for name resolution, routing, and application reachability checks. All output is written to a timestamped file for ticket attachment or escalation reference.
 #
 # Examples:
 #   ./evidence-collect.sh -s cron -e cloudwithdavid.com -i 1.1.1.1
