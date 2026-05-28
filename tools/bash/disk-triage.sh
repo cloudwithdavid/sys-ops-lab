@@ -3,9 +3,7 @@
 # disk-triage.sh
 # First-pass disk usage triage utility.
 #
-# Checks filesystem usage, flags filesystems above a configurable threshold,
-# shows the largest entries under a target path, and saves output for ticket
-# notes or escalation. Does not delete files or decide what cleanup is safe.
+# Checks filesystem usage, flags filesystems above a configurable threshold, shows the largest entries under a target path, and optionally saves output to a timestamped file for ticket attachment or escalation reference.
 #
 # Examples:
 #   ./disk-triage.sh
