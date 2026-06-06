@@ -53,12 +53,11 @@ Primary incident-style scenarios used to practice technical investigation, evide
 <!-- markdownlint-disable MD060 -->
 |            |            |
 | ---------- | ---------- |
-|**Applications and APIs**| • [`api-auth-failure.md`](docs/cases/applications-apis/api-auth-failure.md)   |
+|**Applications and APIs**| • [`api-auth-failure.md`](docs/cases/applications-apis/api-auth-failure.md)<br> • [`api-invalid-request-payload.md`](docs/cases/applications-apis/api-invalid-request-payload.md) |
 |        **Linux**        | • [`service-running-application-unavailable.md`](docs/cases/linux/service-running-application-unavailable.md)<br> • [`repeated-application-errors.md`](docs/cases/linux/repeated-application-errors.md)<br> • [`service-will-not-start.md`](docs/cases/linux/service-will-not-start.md)<br> • [`permissions-blocking-access.md`](docs/cases/linux/permissions-blocking-access.md) |
 |     **Networking**      | • [`dns-resolves-service-still-fails.md`](docs/cases/networking/dns-resolves-service-still-fails.md)<br> • [`host-reachable-application-unreachable.md`](docs/cases/networking/host-reachable-application-unreachable.md)<br> • [`invalid-default-route.md`](docs/cases/networking/invalid-default-route.md)<br> • [`dns-config-issue.md`](docs/cases/networking/dns-config-issue.md) |
-|  **Identity & Access**  | • [`password-reset-access-loss.md`](docs/cases/identity-access/password-reset-access-loss.md)<br> • [`suspicious-login-report.md`](docs/cases/identity-access/suspicious-login-report.md)<br> • [`policy-blocked-sign-in.md`](docs/cases/identity-access/policy-blocked-sign-in.md)<br> • [`account-unlock-root-cause.md`](docs/cases/identity-access/account-unlock-root-cause.md) |
-|  **Windows Endpoint**   | • [`application-install-blocked.md`](docs/cases/windows-endpoint/application-install-blocked.md)<br> • [`mapped-network-drive-unavailable.md`](docs/cases/windows-endpoint/mapped-network-drive-unavailable.md)<br> • [`no-internet-dns-failure.md`](docs/cases/windows-endpoint/no-internet-dns-failure.md) |
-|    **Microsoft 365**    | • [`teams-desktop-sign-in-issue.md`](docs/cases/microsoft-365/teams-desktop-sign-in-issue.md)<br> • [`m365-license-assignment.md`](docs/cases/microsoft-365/M365-license-assignment.md) |
+|  **Identity & Access**  | • [`suspicious-login-report.md`](docs/cases/identity-access/suspicious-login-report.md)<br> • [`policy-blocked-sign-in.md`](docs/cases/identity-access/policy-blocked-sign-in.md) |
+|  **Windows Endpoint**   | • [`mapped-network-drive-unavailable.md`](docs/cases/windows-endpoint/mapped-network-drive-unavailable.md)<br> • [`no-internet-dns-failure.md`](docs/cases/windows-endpoint/no-internet-dns-failure.md) |
 
 ### 📋 Operational Guides & Technical Notes
 
