@@ -24,10 +24,10 @@ A user is unable to generate a partner activity report through the PartnerOps AP
 
 ## Checks
 <!-- markdownlint-disable MD029 -->
-1. Check app reachability and response (with `curl -v http://localhost:8000/status -H "X-Request-ID: endpoint-status-001"`)
+1. Check app reachability and response (with `curl -v http://localhost:8000/status -H "X-Request-ID: endpoint-status-001"`)  
    ***Finding:*** Status endpoint returned `200 OK`, confirming the PartnerOps API is responding to requests.
 
-2. Reproduced the failing report endpoint and checked the matching application log entry.
+2. Reproduced the failing report endpoint and checked the matching application log entry.  
    ***Finding:*** The submitted report endpoint request reached the PartnerOps API but returned `500 Internal Server Error`. Matching logs show `status=500 reason=runtime_error`, indicating an endpoint-specific server-side failure rather than a full API outage.
 
 ```bash
