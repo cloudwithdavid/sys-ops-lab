@@ -84,8 +84,8 @@ general API status works
 
 ---
 
-- Learned `503`: ‘Service Unavailable’: indicates that a server is temporarily unable to handle requests; typically due to maintenance or dependency failure
-- Practiced using `tail -f | nl` to watch live logs
-- Practiced adding `X-Request-ID` headers.
+- Learned `503`: ‘Service Unavailable’: indicates that a server is temporarily unable to handle requests; typically due to maintenance or dependency failure.
+- Practiced adding `X-Request-ID` headers to `curl` requests to correlate API responses with application log entries.
+- Practiced using `tail -f | nl` to watch live logs.
 - Learned `systemctl cat` shows how a systemd service is configured to start, including whether it loads environment variables from an environment file.
 - Learned environment variables can change how an application behaves without changing the application source code.
