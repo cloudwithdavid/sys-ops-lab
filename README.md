@@ -4,46 +4,40 @@
 
 A case-based systems troubleshooting simulation for practicing incident-style investigation, CLI evidence gathering, log analysis, API health checks, and Bash/Python automation across Linux, networking, applications/APIs, and identity scenarios.
 
-The lab uses realistic operational scenarios to practice moving from reported symptoms to hypotheses, checks, evidence, findings, and verification. The emphasis is on understanding how systems fail, gathering evidence with command-line tools, interpreting service and network behavior, and building small utilities that make investigation more repeatable.
+The lab uses realistic operational scenarios to practice moving from reported symptoms to checks, findings, and resolution. The emphasis is on understanding how systems fail, command-line evidence gathering, interpreting system, application, and network behavior, and building small utilities that make troubleshooting repeatable.
 
 ## 🧪 What This Lab Demonstrates
+<!-- markdownlint-disable MD001 -->
+#### 🐧 Linux Services & Runtime Behavior
 
-### 🐧 Linux Services & Runtime Behavior
+- Investigating service state, listening ports, permissions, logs, and runtime symptoms with tools such as `systemctl`/`journalctl`, `ls`, `chmod`, `curl` and `tail`
+- Connecting Linux CLI evidence to real service/application failure modes, including startup failures, unavailable applications, repeated errors, and access issues
 
-- Inspecting service state, process behavior, listening ports, permissions, logs, and runtime symptoms
-- Practicing CLI-based diagnosis with tools such as `systemctl`, `journalctl`, `ss`, `curl`, routing checks, and filesystem inspection
-- Connecting Linux command usage to real service/application failure modes
+#### 🌐 Networking & Connectivity Diagnosis
 
-### 🌐 Networking & Connectivity Diagnosis
-
-- Troubleshooting DNS resolution, host reachability, routing, port access, and service availability
-- Practicing network-path reasoning with tools such as `dig`, `nslookup`, `ping`, `traceroute`, `ip route`, `curl`, `nc`, and `ss`
-- Separating network reachability from application availability
-- Building practical intuition for how DNS, routing, ports, and service listeners affect system behavior
+- Troubleshooting DNS resolution, host reachability, routing, port access, and service availability with tools such as `dig`/`nslookup`, `nc`, `ss`, `ping`, `ip route`, and `curl`
+- Separating network reachability from application availability by reasoning through path, transport connectivity, and service behavior
 <!--
-### ☁️ Cloud Networking & Segmentation — Next Focus
+#### ☁️ Cloud Networking & Segmentation — Next Focus
 
 - Planned AWS-focused scenarios for private DNS, private subnet egress, tier-to-tier connectivity, and network segmentation
-- Practicing cloud network diagnosis with tools such as `dig`, `nslookup`, `getent hosts`, `curl`, `nc`, `ss`, `ip route`, `traceroute`, AWS CLI checks, and validation scripts
-- Separating application failure from DNS, routing, NAT, security group, NACL, and service-listener issues
+- Practicing diagnosis across DNS, routing, NAT, security groups, NACLs, service listeners, and AWS CLI validation checks
 - Building practical intuition for public/private subnet design, Route 53 private hosted zones, NAT Gateway behavior, security-group source rules, and least-privilege network access
 -->
-### 🔌 Applications, APIs & Logs
+#### 🔌 Applications, APIs & Logs
 
-- Investigating HTTP/API behavior through status codes, auth failures, health checks, and application logs
-- Practicing request/response inspection with `curl` and log review with `tail`
-- Connecting API symptoms to service behavior, authentication/authorization signals, and log evidence
+- Investigating HTTP/API behavior through status codes, authentication/authorization failures, health checks, dependency checks, configuration issues, and application logs
+- Practicing request/response inspection and log analysis with `curl`, custom headers, `tail`, and `grep`
 
-### 🔐 Identity, Access & Auth Signals
+#### 🔐 Identity, Access & Auth Signals
 
 - Reviewing access-policy behavior, suspicious sign-in patterns, and authorization-related failures
-- Connecting user impact to identity, policy, and security-relevant evidence
-- Treating identity issues as systems behavior, not just account administration
+- Tracing identity issues from reported access impact to auth, policy, and verification
 
-### ⚙️ Automation & Diagnostic Utilities
+#### ⚙️ Automation & Diagnostic Utilities
 
-- Building Bash and Python utilities for diagnostics, evidence collection, log summarization, API health checks, and repeatable investigation workflows
-- Using automation to reduce repetitive manual checks and make troubleshooting output easier to review
+- Building Bash and Python utilities for diagnostics, evidence collection, and repeatable investigation workflows
+- Using automation to standardize evidence gathering and improve troubleshooting reviewability
 
 ## 📦 Artifacts
 
@@ -58,13 +52,6 @@ Primary incident-style scenarios used to practice technical investigation, evide
 |     **Networking**      | • [`dns-resolves-service-still-fails.md`](docs/cases/networking/dns-resolves-service-still-fails.md)<br> • [`host-reachable-application-unreachable.md`](docs/cases/networking/host-reachable-application-unreachable.md)<br> • [`invalid-default-route.md`](docs/cases/networking/invalid-default-route.md)<br> • [`dns-config-issue.md`](docs/cases/networking/dns-config-issue.md) |
 |  **Identity & Access**  | • [`suspicious-login-report.md`](docs/cases/identity-access/suspicious-login-report.md)<br> • [`policy-blocked-sign-in.md`](docs/cases/identity-access/policy-blocked-sign-in.md) |
 |  **Windows Endpoint**   | • [`mapped-network-drive-unavailable.md`](docs/cases/windows-endpoint/mapped-network-drive-unavailable.md)<br> • [`no-internet-dns-failure.md`](docs/cases/windows-endpoint/no-internet-dns-failure.md) |
-
-### 📋 Operational Guides & Technical Notes
-
-Supporting documentation for repeatable investigation patterns and technical findings.
-
-- [`linux-service-triage-runbook.md`](docs/runbooks/linux-service-triage-runbook.md) — first-pass investigation guide for Linux service state, logs, ports, reachability, and resource pressure.
-- [`service-start-failure-kb.md`](docs/kb-articles/service-start-failure-kb.md) — technical note on Linux service startup failure caused by disk pressure.
 
 ### 🐚 Bash Scripts
 
