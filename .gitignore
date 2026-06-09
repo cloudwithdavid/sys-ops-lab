@@ -1,8 +1,9 @@
-/app-api-fixture
-/docs/cases/applications-apis
-tools/README.md
+app-api-fixture
+docs/cases/cloud-networking
 artifact-queue.md
+tools/bash/*
+tools/python/*
 
-
-!tools/bash/.gitkeep
+!tools/bash/evidence-collect.sh
+!tools/bash/disk-triage.sh
 !tools/python/.gitkeep
