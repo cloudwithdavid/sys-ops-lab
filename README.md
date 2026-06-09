@@ -2,7 +2,7 @@
 
 ## ℹ️ About
 
-A case-based technical lab for practicing systems troubleshooting, incident-style investigation, CLI evidence gathering, log analysis, API health checks, and Bash/Python automation across Linux, networking, applications/APIs, and identity scenarios.
+A case-based systems troubleshooting simulation for practicing incident-style investigation, CLI evidence gathering, log analysis, API health checks, and Bash/Python automation across Linux, networking, applications/APIs, and identity scenarios.
 
 The lab uses realistic operational scenarios to practice moving from reported symptoms to hypotheses, checks, evidence, findings, and verification. The emphasis is on understanding how systems fail, gathering evidence with command-line tools, interpreting service and network behavior, and building small utilities that make investigation more repeatable.
 
