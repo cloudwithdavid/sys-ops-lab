@@ -18,14 +18,14 @@ Single user reports receiving repeated errors and unreliable access when attempt
 
 ## Checks
 <!-- markdownlint-disable MD029 -->
-1. Confirm Dockline application error
-   - _finding_: Dockline application responding with 500 http status code error
+1. Confirm Dockline application error  
+   _**Finding:**_ Dockline application responding with 500 http status code error
 
-2. Check service logs for errors (with `systemctl` and `journalctl`)
-   - _finding_: Service is active and running, no crash or restart events in the journal
+2. Check service logs for errors (with `systemctl` and `journalctl`)  
+   _**Finding:**_ Service is active and running, no crash or restart events in the journal
 
-3. Check log file size (with `ls -lh`, `tail`, `grep`)
-   - _finding_: Application log file `app.log` has grown to 4.2G and contains 14,382 'ERROR' entries, all reporting the same failure: `Export worker failed to write temp file: No space left on device`.
+3. Check log file size (with `ls -lh`, `tail`, `grep`)  
+   _**Finding:**_ Application log file `app.log` has grown to 4.2G and contains 14,382 'ERROR' entries, all reporting the same failure: `Export worker failed to write temp file: No space left on device`.
 
 ```bash
 $ ls -lh /var/log/dockline/
@@ -42,8 +42,8 @@ $ grep -c "ERROR" /var/log/dockline/app.log
 14382
 ```
 
-4. Check filesystem and log directory usage (with `df` and `du`)
-   - _finding_: `/var` filesystem is at 99% capacity. `/var/log/dockline/` is consuming
+4. Check filesystem and log directory usage (with `df` and `du`)  
+   _**Finding:**_ `/var` filesystem is at 99% capacity. `/var/log/dockline/` is consuming
      5.3G, making it the primary source of disk pressure.
 
 ```bash

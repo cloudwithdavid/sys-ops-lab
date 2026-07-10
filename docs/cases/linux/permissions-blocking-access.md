@@ -24,7 +24,7 @@ $ ls -ld /opt/exports/
 drwx------ 2 root data-exports /opt/exports/
 ```
 
-- finding: `export` directory is missing permissions for group owner. Group owner is set to `data-exports`
+_**Finding:**_ `export` directory is missing permissions for group owner. Group owner is set to `data-exports`
 
 2. Check export script file permissions and owning group
 
@@ -33,7 +33,7 @@ $ ls -l /opt/exports/weekly_export.sh
 -rwxrwx--- 1 root data-exports /opt/exports/weekly_export.sh
 ```
 
-- finding: `weekly_export.sh` file has correct permission configuration. Group owner is set to `data-exports`
+_**Finding:**_ `weekly_export.sh` file has correct permission configuration. Group owner is set to `data-exports`
 
 3. Check user `priya.nair` group affiliation
 
@@ -42,7 +42,7 @@ $ id priya.nair
 uid=1042(priya.nair) gid=1042(priya.nair) groups=1042(priya.nair),1005(analysts)
 ```
 
-- finding: User is not a member of `data-exports` group
+_**Finding:**_ User is not a member of `data-exports` group
 
 ## Resolution
 

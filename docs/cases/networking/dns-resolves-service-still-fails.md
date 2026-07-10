@@ -19,23 +19,23 @@ Multiple user cannot access Pressroom web application on multiple browsers
 
 ## Checks
 
-1. Check Pressroom web application behavior on my device
-   - _finding_: Pressroom application times out. Non-responsive.
+1. Check Pressroom web application behavior on my device  
+   _**Finding:**_ Pressroom application times out. Non-responsive.
 
-2. Check Pressroom name resolution' (with `getent hosts`)
-   - _finding_: Pressroom name successfully resolved and provided? the host IP
+2. Check Pressroom name resolution' (with `getent hosts`)  
+   _**Finding:**_ Pressroom name successfully resolved and provided? the host IP
 
-3. Check Pressroom host reachability' (with `ping`)
-   - _finding_: Host is reachable
+3. Check Pressroom host reachability' (with `ping`)  
+   _**Finding:**_ Host is reachable
 
-4. Check if app responds (with `curl`)
-   - _finding_: Curl timed out. No HTTP response received
+4. Check if app responds (with `curl`)  
+   _**Finding:**_ Curl timed out. No HTTP response received
 
-5. Check service state and logs' (with `systemctl` and `journalctl`)
-   - _finding_: Service status is active. Logs show no errors.
+5. Check service state and logs' (with `systemctl` and `journalctl`)  
+   _**Finding:**_ Service status is active. Logs show no errors.
 
-6. Check service listening ports (with `ss -tuln`)
-   - _finding_: evidence-collect output showed no listener on port 80
+6. Check service listening ports (with `ss -tuln`)  
+   _**Finding:**_ evidence-collect output showed no listener on port 80
 
 > **Related Tooling**
 >

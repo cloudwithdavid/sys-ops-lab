@@ -16,20 +16,20 @@ User reports the Lantern internal dashboard is unavailable. The issue appears to
 
 ## Checks
 
-1. Confirm whether the issue is limited to the reporting user
-    - finding: Multiple support staff are unable to load the Lantern dashboard, so the issue does not appear to be user-specific.
+1. Confirm whether the issue is limited to the reporting user  
+    _**Finding:**_ Multiple support staff are unable to load the Lantern dashboard, so the issue does not appear to be user-specific.
 
-2. Check the Lantern service status with `systemctl status`
-    - finding: The service is loaded but in a failed state, with an exit-code failure.
+2. Check the Lantern service status with `systemctl status`  
+    _**Finding:**_ The service is loaded but in a failed state, with an exit-code failure.
 
-3. Review service logs with `journalctl -u`.
-    - finding: Logs show the service cannot write its startup cache because there is no space left on device.
+3. Review service logs with `journalctl -u`  
+    _**Finding:**_ Logs show the service cannot write its startup cache because there is no space left on device.
 
-4. Check filesystem usage with `df -h`
-   - finding: The `/var` filesystem is full, leaving no usable space for the service to write startup/cache files.
+4. Check filesystem usage with `df -h`  
+   _**Finding:**_ The `/var` filesystem is full, leaving no usable space for the service to write startup/cache files.
 
-5. Check directory usage with `du -h --max-depth=1 [path]`
-   - finding: `/var/log/lantern` is using most of the space under `/var`.
+5. Check directory usage with `du -h --max-depth=1 [path]`  
+   _**Finding:**_ `/var/log/lantern` is using most of the space under `/var`.
 
 > **Related Tooling**
 >

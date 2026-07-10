@@ -19,15 +19,15 @@ Single user reported a possible unauthorized Microsoft 365 sign-in. The user rec
 
 ## Checks
 
-1. Review sign-in logs in the identity/admin portal
-   - finding: Logs show a successful sign-in from a Netherlands-based IP address during the window the user was in the air. Authentication details show the sign-in completed successfully.
+1. Review sign-in logs in the identity/admin portal  
+   _**Finding:**_ Logs show a successful sign-in from a Netherlands-based IP address during the window the user was in the air. Authentication details show the sign-in completed successfully.
    > The exact method used to satisfy or bypass the expected MFA requirement requires security review.
 
-2. Check whether any account changes occurred post sign-in
-   - finding: No mailbox rules, forwarding addresses, or admin role changes are visible. The suspicious sign-in appears to have accessed Microsoft 365 mailbox-related resources, based on the application shown in the sign-in logs.
+2. Check whether any account changes occurred post sign-in  
+   _**Finding:**_ No mailbox rules, forwarding addresses, or admin role changes are visible. The suspicious sign-in appears to have accessed Microsoft 365 mailbox-related resources, based on the application shown in the sign-in logs.
 
-3. Confirm the user's actual location and recent travel
-   - finding: User confirms she was on a flight during the alert window and did not authorize any sign-in. She recalls declining an MFA prompt at the airport beforehand but is uncertain whether a second prompt appeared.
+3. Confirm the user's actual location and recent travel  
+   _**Finding:**_ User confirms she was on a flight during the alert window and did not authorize any sign-in. She recalls declining an MFA prompt at the airport beforehand but is uncertain whether a second prompt appeared.
 
 ## Verification
 

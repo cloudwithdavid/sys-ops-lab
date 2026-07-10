@@ -17,14 +17,14 @@ Single user cannot access Outlook. It is not yet clear whether the issue is a lo
 
 ## Checks
 
-1. Confirm exact symptom and any error shown
-    - finding: user can sign in elsewhere
+1. Confirm exact symptom and any error shown  
+    _**Finding:**_ user can sign in elsewhere
 
-2. Confirm whether the issue is Outlook only or other M365 apps too
-    - finding: Teams access is also affected
+2. Confirm whether the issue is Outlook only or other M365 apps too  
+    _**Finding:**_ Teams access is also affected
 
-3. Check account and license state in the admin portal
-    - finding: required Exchange or M365 license/service is missing
+3. Check account and license state in the admin portal  
+    _**Finding:**_ required Exchange or M365 license/service is missing
 
 ## Resolution
 

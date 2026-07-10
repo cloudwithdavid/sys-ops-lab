@@ -19,29 +19,29 @@ Single user is unable to access vendor portal while having access to internet an
 
 ## Checks
 <!-- markdownlint-disable MD029 -->
-1. Ask user if there is an error message when attempting to load the vendor portal
-    - finding: User reports that they recieve a 'Connection Timeout' error message
+1. Ask user if there is an error message when attempting to load the vendor portal  
+   _**Finding:**_ User reports that they recieve a 'Connection Timeout' error message
 
-2. Check if the vendor portal loads on my device
-    - finding: My endpoint also recieves 'Connection Timeout' error message
+2. Check if the vendor portal loads on my device  
+   _**Finding:**_ My endpoint also recieves 'Connection Timeout' error message
 
-3. Check if domain resolves (with `nslookup`)
-    - finding: domain resolves correctly to an internal IP
+3. Check if domain resolves (with `nslookup`)  
+   _**Finding:**_ domain resolves correctly to an internal IP
 
-4. Check if the server/host is reachable (with `ping`)
-    - finding: The server responds with low latency and no packet loss
+4. Check if the server/host is reachable (with `ping`)  
+   _**Finding:**_ The server responds with low latency and no packet loss
 
-5. Check if the application is reachable (with `curl`)
-    - finding: Connection fails or times out.
+5. Check if the application is reachable (with `curl`)  
+   _**Finding:**_ Connection fails or times out.
 
-6. Check service status and logs (with `systemctl` and `journalctl -u`)
-    - finding: Service status is active and logs show no signs of an error
+6. Check service status and logs (with `systemctl` and `journalctl -u`)  
+   _**Finding:**_ Service status is active and logs show no signs of an error
 
-7. Check application listening ports (`ss -tulsn`)
-    - finding: Nothing is listening on port 80. The expected port is not open.
+7. Check application listening ports (`ss -tulsn`)  
+   _**Finding:**_ Nothing is listening on port 80. The expected port is not open.
 
-8. Check vendor portal config file
-    - finding: Vendor portal config file revealed application server is binded to port 8080 instead of port 80. Application server is unable to recieve http requests
+8. Check vendor portal config file  
+   _**Finding:**_ Vendor portal config file revealed application server is binded to port 8080 instead of port 80. Application server is unable to recieve http requests
 
 ## Resolution
 

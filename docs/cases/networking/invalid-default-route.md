@@ -18,14 +18,14 @@ User reports they can SSH into the Harbor Notes build server and that the server
 
 ## Checks
 
-1. Test external package repository access with `curl [external repository URL]`
-    - finding: Connection fails or times out.
+1. Test external package repository access (with `curl [external repository URL]`)  
+   _**Finding:**_ Connection fails or times out.
 
-2. Test external IP reachability with `ping -c 4 [public IP]`
-    - finding: Public IP is unreachable.
+2. Test external IP reachability (with `ping -c 4 [public IP]`)  
+   _**Finding:**_ Public IP is unreachable.
 
-3. Review routing table with `ip route`
-    - finding: Default route points to an invalid gateway for the server’s network.
+3. Review routing table (with `ip route`)  
+   _**Finding:**_ Default route points to an invalid gateway for the server’s network.
 
 > **Related Tooling**
 >

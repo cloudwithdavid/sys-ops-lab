@@ -22,8 +22,8 @@ User is unable to create customer handoff notes through the Partner Notes API. T
 
 ## Checks
 <!-- markdownlint-disable MD029 -->
-1. Reviewed and reproduced the requester’s submitted note creation request.
-   ***Finding:*** The request was using the note creation endpoint and included `Content-Type: application/json`, but the submitted JSON body only included `title` and did not include the required `body` field. `POST /notes` returned `400 Bad Request`, and application logs confirmed `reason=missing_required_field:body`.
+1. Reviewed and reproduced the requester’s submitted note creation request.  
+   _**Finding:**_ The request was using the note creation endpoint and included `Content-Type: application/json`, but the submitted JSON body only included `title` and did not include the required `body` field. `POST /notes` returned `400 Bad Request`, and application logs confirmed `reason=missing_required_field:body`.
 
 ```bash
 $ curl -v http://localhost:8000/notes \
@@ -44,8 +44,8 @@ $ grep "invalid-payload-missing-body-001" logs/app.log
 2026-06-05T21:40:17Z level=WARNING endpoint=/notes status=400 reason=missing_required_field:body request_id=invalid-payload-missing-body-001
 ```
 
-2. Reproduced the submitted note creation request with the incomplete payload.
-   ***Finding:*** Corrected `POST /notes` request returned `201 Created` when the JSON payload included both required fields, `title` and `body`. Application logs confirmed `reason=note_created` with the matching request ID.
+2. Reproduced the submitted note creation request with the incomplete payload.  
+   _**Finding:**_ Corrected `POST /notes` request returned `201 Created` when the JSON payload included both required fields, `title` and `body`. Application logs confirmed `reason=note_created` with the matching request ID.
 
 ```bash
 $ curl -v http://localhost:8000/notes \

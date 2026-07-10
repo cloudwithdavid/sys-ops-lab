@@ -19,17 +19,17 @@ Single user cannot access mapped network drive P:\. Drive is showing as disconne
 
 ## Checks
 
-1. check queue and ask whether other users are affected
-   - finding: No other tickets about `P:\`. Issue appears limited to single user.
+1. Check queue and ask whether other users are affected  
+   _**Finding:**_ No other tickets about `P:\`. Issue appears limited to single user.
 
-2. Check driver mapping (with `net use`)
-   - finding: `P:` shows as `Disconnected`, mapped to `\\fileserver\projects`. Driver mapping still exists and points to the correct path
+2. Check driver mapping (with `net use`)  
+   _**Finding:**_ `P:` shows as `Disconnected`, mapped to `\\fileserver\projects`. Driver mapping still exists and points to the correct path
 
-3. Test file server hostname resolution (with `nslookup`)
-   - finding: Hostname resolves correctly to a valid IP. DNS is not the issue
+3. Test file server hostname resolution (with `nslookup`)  
+   _**Finding:**_ Hostname resolves correctly to a valid IP. DNS is not the issue
 
-4. Check if user's credentials are stale, expired, or broken
-   - finding: A stale saved credential entry for `\\fileserver` was present, tied to an older session token.
+4. Check if user's credentials are stale, expired, or broken  
+   _**Finding:**_ A stale saved credential entry for `\\fileserver` was present, tied to an older session token.
 
 ## Resolution
 

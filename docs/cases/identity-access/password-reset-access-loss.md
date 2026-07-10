@@ -19,11 +19,11 @@ Single user is unable to access the application after being signed out of their 
 
 ## Checks
 
-1. Confirm exact sign-in symptom and scope
-   - finding: User was signed out and cannot sign back in with current credentials.
+1. Confirm exact sign-in symptom and scope  
+   _**Finding:**_ User was signed out and cannot sign back in with current credentials.
 
-2. Check account status in the admin portal
-   - finding: Account is active and eligible for password reset; no lockout indicated.
+2. Check account status in the admin portal  
+   _**Finding:**_ Account is active and eligible for password reset; no lockout indicated.
 
 ## Resolution
 

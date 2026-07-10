@@ -18,21 +18,20 @@ the issue is process-specific, storage-related, or a broader system problem.
 
 ## Checks
 
-1. Open Task Manager and review CPU, memory, and disk usage
-   - finding: Memory usage is near 100% while Disk and CPU are normal
+1. Open Task Manager and review CPU, memory, and disk usage  
+   _**Finding:**_ Memory usage is near 100% while Disk and CPU are normal
 
-2. Identify whether one process or a group of processes is responsible
-   for the high memory usage
-   - finding: Browser and editing applications are consuming the majority
+2. Identify whether one process or a group of processes is responsible for the high memory usage  
+   _**Finding:**_ Browser and editing applications are consuming the majority
      of available memory. No single runaway process — high usage reflects
      active workload.
 
-3. Review startup applications and their startup impact rating
-   - finding: No abnormal startup applications present. Startup impact
+3. Review startup applications and their startup impact rating  
+   _**Finding:**_ No abnormal startup applications present. Startup impact
      is not a contributing factor.
 
-4. Check available disk space
-   - finding: Sufficient disk space available. Storage pressure is not
+4. Check available disk space  
+   _**Finding:**_ Sufficient disk space available. Storage pressure is not
      a contributing factor.
 
 ## Resolution

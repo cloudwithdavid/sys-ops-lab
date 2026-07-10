@@ -17,26 +17,26 @@ Single user on a Windows endpoint is unable to access any internet-dependent sit
 
 ## Checks
 
-1. Confirm exact symptom and whether all apps/sites fail
-   - finding: Device cannot access internet-dependent sites or applications
+1. Confirm exact symptom and whether all apps/sites fail  
+   _**Finding:**_ Device cannot access internet-dependent sites or applications
 
-2. Confirm connection to intended SSID
-   - finding: Device is connected to the intended SSID
+2. Confirm connection to intended SSID  
+   _**Finding:**_ Device is connected to the intended SSID
 
-3. Check whether other devices on the same network are affected
-   - finding: Devices on the same network have internet connection and are not affected
+3. Check whether other devices on the same network are affected  
+   _**Finding:**_ Devices on the same network have internet connection and are not affected
 
-4. Review IP configuration for valid IP, gateway, and DNS values with `ipconfig /all`
-   - finding: Endpoint has valid IP address, default gateway, and DNS server values
+4. Review IP configuration for valid IP, gateway, and DNS values with `ipconfig /all`  
+   _**Finding:**_ Endpoint has valid IP address, default gateway, and DNS server values
 
-5. Test reachability to default gateway with `ping [gateway]`
-   - finding: Device is able to reach default gateway
+5. Test reachability to default gateway with `ping [gateway]`  
+   _**Finding:**_ Device is able to reach default gateway
 
-6. Test reachability to a public IP with `ping [public IP]`
-   - finding: Device can reach a public IP
+6. Test reachability to a public IP with `ping [public IP]`  
+   _**Finding:**_ Device can reach a public IP
 
-7. Test DNS resolution with `nslookup google.com`
-   - finding: DNS resolution failed, no response received from DNS server
+7. Test DNS resolution with `nslookup google.com`  
+   _**Finding:**_ DNS resolution failed, no response received from DNS server
 
 ## Resolution
 

@@ -20,20 +20,20 @@ User reports that the Canva desktop app installation is blocked on their company
 
 ## Checks
 
-1. Confirm the exact installation prompt or error message
-   - finding: User provided a screenshot showing Windows UAC prompting for administrator credentials during Canva Desktop installation.
+1. Confirm the exact installation prompt or error message  
+   _**Finding:**_ User provided a screenshot showing Windows UAC prompting for administrator credentials during Canva Desktop installation.
 
-2. Confirm the affected device from the ticket
-   - finding: Ticket is associated with the user’s assigned company Windows laptop.
+2. Confirm the affected device from the ticket  
+   _**Finding:**_ Ticket is associated with the user’s assigned company Windows laptop.
 
-3. Confirm the application, installer source, and business need
-   - finding: User is attempting to install Canva Desktop from the vendor website for work on a marketing campaign asset.
+3. Confirm the application, installer source, and business need  
+   _**Finding:**_ User is attempting to install Canva Desktop from the vendor website for work on a marketing campaign asset.
 
-4. Check approved software portal
-   - finding: Canva Desktop is not listed as an available self-service install option.
+4. Check approved software portal  
+   _**Finding:**_ Canva Desktop is not listed as an available self-service install option.
 
-5. Review internal software install support guidance
-   - finding: First-line support cannot approve or install applications that are not available through the approved software portal and require administrator elevation.
+5. Review internal software install support guidance  
+   _**Finding:**_ First-line support cannot approve or install applications that are not available through the approved software portal and require administrator elevation.
 
 ## Verification
 

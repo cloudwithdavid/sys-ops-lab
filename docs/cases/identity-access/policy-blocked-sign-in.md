@@ -22,11 +22,11 @@ The block appears to occur after the authentication steps complete, not during t
 
 ## Checks
 
-1. Check account status in the identity/admin portal
-   - finding: Account is active, not locked, not disabled. No admin restriction or flag is present. Account state is not the cause.
+1. Check account status in the identity/admin portal  
+   _**Finding:**_ Account is active, not locked, not disabled. No admin restriction or flag is present. Account state is not the cause.
 
-2. Review sign-in logs of the affected user
-   - finding: Logs confirm successful password authentication and MFA approval. Sign-in is blocked by an access policy. The blocking policy and unsatisfied condition are visible in the log entry.
+2. Review sign-in logs of the affected user  
+   _**Finding:**_ Logs confirm successful password authentication and MFA approval. Sign-in is blocked by an access policy. The blocking policy and unsatisfied condition are visible in the log entry.
 
 ## Verification
 

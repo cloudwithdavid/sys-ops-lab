@@ -18,19 +18,18 @@ User is unable to access internet or internal tools while being able to reach lo
 
 ## Checks
 <!-- markdownlint-disable MD029 MD032 -->
-1. Confirm IP reachability — `ping` to an external IP
-- _finding_: Device is able to reach external IPs
+1. Confirm IP reachability — `ping` to an external IP  
+   _**Finding:**_ Device is able to reach external IPs
 
-2. Confirm name resolution is actually broken — `dig` against a known hostname
-- _finding_: Queries are being sent to the old segment's DNS server therefore is unable to resolve domain names
+2. Confirm name resolution is actually broken — `dig` against a known hostname  
+   _**Finding:**_ Queries are being sent to the old segment's DNS server therefore is unable to resolve domain names
 
-3. Confirm nameserver configuration (with `cat /etc/resolv.conf`)
+3. Confirm nameserver configuration (with `cat /etc/resolv.conf`)  
+   _**Finding:**_ Nameserver entry points to the old DNS server IP from the previous network segment.
 
 ```bash
 nameserver 10.0.1.53
 ```
-
-- _finding_: Nameserver entry points to the old DNS server IP from the previous network segment.
 
 ## Resolution
 

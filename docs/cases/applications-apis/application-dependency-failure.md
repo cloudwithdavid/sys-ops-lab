@@ -21,16 +21,16 @@ User from the Partner Onboarding Team is unable to confirm billing sync readines
 ## Checks
 <!-- markdownlint-disable MD029 -->
 1. Checked baseline PartnerOps API status with `/status`.  
-   ***Finding:*** `/status` returned `200 OK`, confirming the API is reachable and able to serve normal status requests. The status response also showed the billing sync integration was currently disabled in runtime configuration.
+   _**Finding:**_ `/status` returned `200 OK`, confirming the API is reachable and able to serve normal status requests. The status response also showed the billing sync integration was currently disabled in runtime configuration.
 
 2. Checked the billing sync integration status endpoint (with `curl -v https://partnerops.internal/integrations/billing-sync/status`).  
-   ***Finding:*** The billing sync status endpoint returned `503 Service Unavailable`.
+   _**Finding:**_ The billing sync status endpoint returned `503 Service Unavailable`.
 
 3. Reviewed application logs for the failed billing sync status request.  
-   ***Finding:*** Logs showed the billing sync status request failed because the billing sync integration was disabled in runtime configuration.
+   _**Finding:**_ Logs showed the billing sync status request failed because the billing sync integration was disabled in runtime configuration.
 
-4. Reviewed the PartnerOps API service environment configuration.
-   ***Finding:*** The billing sync integration was disabled with `BILLING_SYNC_ENABLED=false`.
+4. Reviewed the PartnerOps API service environment configuration.  
+   _**Finding:**_ The billing sync integration was disabled with `BILLING_SYNC_ENABLED=false`.
 
 ```bash
 sudo systemctl cat partnerops-api

@@ -2,7 +2,7 @@
 
 ## ℹ️ About
 
-A case-based systems troubleshooting simulation for practicing incident-style investigation, CLI evidence gathering, log analysis, API health checks, and Bash/Python automation across Linux, networking, applications/APIs, and identity scenarios.
+A case-based systems troubleshooting simulation for practicing incident-style investigation, CLI evidence gathering, log analysis, API health checks, AWS cloud networking, and Bash/Python automation across Linux systems, networking, applications/APIs, and identity scenarios.
 
 The lab uses realistic operational scenarios to practice moving from reported symptoms to checks, findings, and resolution. The emphasis is on understanding how systems fail, command-line evidence gathering, interpreting system, application, and network behavior, and building small utilities that make troubleshooting repeatable.
 
@@ -17,13 +17,14 @@ The lab uses realistic operational scenarios to practice moving from reported sy
 
 - Troubleshooting DNS resolution, host reachability, routing, port access, and service availability with tools such as `dig`/`nslookup`, `nc`, `ss`, `ping`, `ip route`, and `curl`
 - Separating network reachability from application availability by reasoning through path, transport connectivity, and service behavior
-<!--
-#### ☁️ Cloud Networking & Segmentation — Next Focus
 
-- Planned AWS-focused scenarios for private DNS, private subnet egress, tier-to-tier connectivity, and network segmentation
-- Practicing diagnosis across DNS, routing, NAT, security groups, NACLs, service listeners, and AWS CLI validation checks
-- Building practical intuition for public/private subnet design, Route 53 private hosted zones, NAT Gateway behavior, security-group source rules, and least-privilege network access
--->
+#### ☁️ Cloud Networking & Segmentation
+
+> Case files adapted from completed work in the [Learn to Cloud Networking Lab](https://github.com/learntocloud/networking-lab).
+
+- Troubleshooting and fixing broken cloud network infrastructure involving private subnet egress, private DNS resolution, tier-to-tier connectivity, and segmentation controls
+- Using AWS CLI to inspect and correct route tables, NAT Gateway paths, Route 53 private hosted zones, security group and NACL configuration, and least-privilege access
+
 #### 🔌 Applications, APIs & Logs
 
 - Investigating HTTP/API behavior through status codes, authentication/authorization failures, health checks, dependency checks, configuration issues, and application logs
@@ -48,10 +49,11 @@ Primary incident-style scenarios used to practice technical investigation, evide
 |            |            |
 | ---------- | ---------- |
 |**Applications and APIs**| • [`application-dependency-failure.md`](docs/cases/applications-apis/application-dependency-failure.md)<br> • [`application-running-endpoint-failing.md`](docs/cases/applications-apis/application-running-endpoint-failing.md)<br> • [`api-auth-failure.md`](docs/cases/applications-apis/api-auth-failure.md)<br> • [`api-invalid-request-payload.md`](docs/cases/applications-apis/api-invalid-request-payload.md) |
+|   **Cloud Networking**  | • [`private-subnet-egress-failure.md`](docs/cases/cloud-networking/private-subnet-egress-failure.md)<br> • [`private-dns-service-discovery.md`](docs/cases/cloud-networking/private-dns-service-discovery.md)<br> • [`tier-to-tier-connectivity-blocked.md`](docs/cases/cloud-networking/tier-to-tier-connectivity-blocked.md)<br> • [`network-segmentation-exposure.md`](docs/cases/cloud-networking/network-segmentation-exposure.md) |
 |        **Linux**        | • [`service-running-application-unavailable.md`](docs/cases/linux/service-running-application-unavailable.md)<br> • [`repeated-application-errors.md`](docs/cases/linux/repeated-application-errors.md)<br> • [`service-will-not-start.md`](docs/cases/linux/service-will-not-start.md)<br> • [`permissions-blocking-access.md`](docs/cases/linux/permissions-blocking-access.md) |
 |     **Networking**      | • [`dns-resolves-service-still-fails.md`](docs/cases/networking/dns-resolves-service-still-fails.md)<br> • [`host-reachable-application-unreachable.md`](docs/cases/networking/host-reachable-application-unreachable.md)<br> • [`invalid-default-route.md`](docs/cases/networking/invalid-default-route.md)<br> • [`dns-config-issue.md`](docs/cases/networking/dns-config-issue.md) |
 |  **Identity & Access**  | • [`suspicious-login-report.md`](docs/cases/identity-access/suspicious-login-report.md)<br> • [`policy-blocked-sign-in.md`](docs/cases/identity-access/policy-blocked-sign-in.md) |
-|  **Windows Endpoint**   | • [`mapped-network-drive-unavailable.md`](docs/cases/windows-endpoint/mapped-network-drive-unavailable.md)<br> • [`no-internet-dns-failure.md`](docs/cases/windows-endpoint/no-internet-dns-failure.md) |
+|   **Windows Endpoint**  | • [`mapped-network-drive-unavailable.md`](docs/cases/windows-endpoint/mapped-network-drive-unavailable.md)<br> • [`no-internet-dns-failure.md`](docs/cases/windows-endpoint/no-internet-dns-failure.md) |
 
 ### 🐚 Bash Scripts
 
@@ -71,7 +73,7 @@ Python utilities for API checks, log analysis, and operational automation.
 
 ## 🗂️ Repository Structure
 
-- [`docs/cases/`](docs/cases/) → troubleshooting cases
+- [`docs/cases/`](docs/cases/) → troubleshooting incident case
 - [`docs/kb-articles/`](docs/kb-articles/) → technical notes
 - [`docs/runbooks/`](docs/runbooks/) → operational guides
 - [`tools/bash/`](tools/bash/) → Bash diagnostic utilities

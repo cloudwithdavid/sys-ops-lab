@@ -17,11 +17,11 @@ Single user is unable to sign in to the application. Account state is not yet co
 
 ## Checks
 
-1. Confirm the exact symptom and any error shown
-   - finding: User reports they cannot sign in and receives a message indicating the account is locked after repeated failed sign-in attempts.
+1. Confirm the exact symptom and any error shown  
+   _**Finding:**_ User reports they cannot sign in and receives a message indicating the account is locked after repeated failed sign-in attempts.
 
-2. Check account status in the admin/identity system
-   - finding: Account is active but currently locked. No disabled state or separate admin restriction is shown.
+2. Check account status in the admin/identity system  
+   _**Finding:**_ Account is active but currently locked. No disabled state or separate admin restriction is shown.
 
 ## Resolution
 

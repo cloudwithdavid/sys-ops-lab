@@ -18,14 +18,14 @@ User's Teams desktop application stuck at sign-in screen, not allowing the user 
 
 ## Checks
 
-1. Confirmed credentials are valid and account is active
-   - finding: User is able to sign-in to other M365 applications
+1. Confirmed credentials are valid and account is active  
+   _**Finding:**_ User is able to sign-in to other M365 applications
 
-2. Check if anyone else is experiencing the same issue
-   - finding: No other users are reporting Teams desktop sign-in issues
+2. Check if anyone else is experiencing the same issue  
+   _**Finding:**_ No other users are reporting Teams desktop sign-in issues
 
-3. Assess likely cause based on confirmed findings
-   - finding: Credentials valid, account healthy, issue is single-user and desktop-specific, points to corrupted or stale token cache identified as most likely cause
+3. Assess likely cause based on confirmed findings  
+   _**Finding:**_ Credentials valid, account healthy, issue is single-user and desktop-specific, points to corrupted or stale token cache identified as most likely cause
 
 ## Resolution
 
